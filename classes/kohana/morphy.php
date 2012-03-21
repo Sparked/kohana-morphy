@@ -19,11 +19,7 @@ class Kohana_Morphy {
      */
     public static function factory($lang = '') {
         
-        if(substr(Kohana::VERSION, 0, 3) >= '3.2') {
-            $config = Kohana::config('morphy');
-        } else {
-            $config = Kohana::$config->load('morphy');
-        }
+        $config = Kohana::$config->load('morphy');
         
         // если передали язык в метод, то берем его, иначе берем язык из конфига
         $language = $lang === '' ? $config->language : $lang;
