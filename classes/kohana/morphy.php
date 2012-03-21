@@ -15,7 +15,7 @@ class Kohana_Morphy {
     /**
      * Создает и возвращает ссылку на объект phpMorphy
      * @param $lang string опередляет язык и словарь для анализа, если не указан, то берется из конфига.
-     * @return  object
+     * @return  phpMorphy
      */
     public static function factory($lang = '') {
         
